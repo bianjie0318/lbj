@@ -36,7 +36,7 @@ export default {
   created() {},
   mounted() {
     this.$http.get("https://api.it120.cc/small4/banner/list").then(res => {
-      console.log(res);
+      // console.log(res);
       this.banners = res.data.data;
     });
   },

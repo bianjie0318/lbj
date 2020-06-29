@@ -1,11 +1,13 @@
 <template>
   <div class="home">
       <Banner></Banner>
+      <kan-j></kan-j>
   </div>
 </template>
 
 <script>
 import Banner from '@/components/Banner'
+import KanJ from '@/components/KanJ'
 export default {
   data() {
     return {
@@ -16,7 +18,7 @@ export default {
       
   },
   components: {
-      Banner
+      Banner,KanJ
   },
   mounted() {
       
