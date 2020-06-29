@@ -6,8 +6,12 @@ import router from './router'
 // import { Swipe, SwipeItem } from 'vant';
 import Vant from 'vant';
 import 'vant/lib/index.css';
+import axios from "axios"
+import "../static/js/rem.js"
 
 Vue.config.productionTip = false
+
+Vue.prototype.$http = axios
 
 Vue.use(Vant);
 // Vue.use(Swipe);
