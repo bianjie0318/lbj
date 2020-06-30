@@ -5,7 +5,7 @@
       <van-icon class="small" name="arrow" />
     </p>
     <ul class="tj">
-        <tj-item v-for="item in tjlist" :tj="item" :key="item.id"></tj-item>
+        <tj-item v-for="item in tjlist" :tj="item" :key="item.id" v-show="item.characteristic"></tj-item>
     </ul>
   </div>
 </template>
@@ -23,9 +23,9 @@ export default {
       TjItem
   },
   mounted() {
-      this.$http.get("https://api.it120.cc/small4/shop/goods/kanjia/list").then((res)=>{
+      this.$http.get("https://api.it120.cc/small4/shop/goods/list").then((res)=>{
           console.log(res)
-          this.tjlist=res.data.data.goodsMap
+          this.tjlist=res.data.data
       })
   },
   methods: {}
