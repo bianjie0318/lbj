@@ -2,12 +2,16 @@
   <div class="home">
       <Banner></Banner>
       <kan-j></kan-j>
+      <Jingx></Jingx>
+      <Tuij></Tuij>
   </div>
 </template>
 
 <script>
 import Banner from '@/components/Banner'
 import KanJ from '@/components/KanJ'
+import Jingx from '@/components/Jingx'
+import Tuij from '@/components/Tuij'
 export default {
   data() {
     return {
@@ -18,7 +22,7 @@ export default {
       
   },
   components: {
-      Banner,KanJ
+      Banner,KanJ,Jingx,Tuij
   },
   mounted() {
       
