@@ -15,7 +15,7 @@ import Tuij from "@/components/Tuij"
 export default {
     data() {
         return {
-
+            
         };
     },
     created() {
